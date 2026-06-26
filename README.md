@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="assets/banner.jpg" alt="Awesome Diffusion LLM" width="100%">
   <h1>🌀 Awesome Diffusion LLM</h1>
   <p>A curated list of diffusion language models (dLLMs): the papers, models, and code behind diffusion-based, non-autoregressive text generation, with a focus on 2025–2026.</p>
   <p>
