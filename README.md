@@ -64,6 +64,8 @@
 - [LLaDA-MoE: A Sparse MoE Diffusion Language Model](https://arxiv.org/abs/2509.24389) — First masked-diffusion LLM with MoE trained from scratch (~20T tokens): 7B total / 1.4B active, matching dense Qwen2.5-3B-Instruct while beating LLaDA and Dream — shows MoE sparsity composes cleanly with diffusion (Inclusion AI / Ant Group, 2025).
 - [LLaDA2.0: Scaling Up Diffusion Language Models to 100B](https://arxiv.org/abs/2512.15745) — Pushes open diffusion LLMs to 100B (flash) and 16B (mini) MoE variants via AR-to-diffusion conversion plus 3-phase block-level WSD training; the largest open dLLM to date and the clearest scaling-frontier datapoint (Inclusion AI / Ant Group, late 2025).
 - [Stable-DiffCoder: Pushing the Frontier of Code Diffusion Large Language Model](https://arxiv.org/abs/2601.15892) — A 2026 open 8B code dLLM built on Seed-Coder with a block-diffusion continual-pretraining stage; beats its AR counterpart on code gen/completion/editing, with any-order modeling helping structured edits — base + instruct open, MIT license (ByteDance Seed, 2026).
+- [DiffusionGemma](https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/) — Google's first open-weight text-diffusion model (26B MoE, ~3.8B active, Apache-2.0, ~1,100 tok/s on H100); the first frontier-lab open dLLM and the headline H1-2026 release ([weights](https://huggingface.co/google/diffusiongemma-26B-A4B-it)) (2026).
+- [RND1: Radical Numerics Diffusion](https://github.com/RadicalNumerics/RND1) — A 30B sparse-MoE (3B active) dLLM converted from Qwen3-30B-A3B via AR-to-diffusion; billed as the largest open diffusion LM at release (2025).
 
 ## 🏋️ Training & Scaling Methods
 
@@ -88,6 +90,8 @@
 - [Sequential Diffusion Language Models (SDLM)](https://arxiv.org/abs/2509.24007) — Introduces Next-Sequence Prediction to unify next-token and next-block prediction, letting a retrofitted AR model adaptively choose generation length per step while staying KV-cache compatible — ~2x throughput over Qwen-2.5 (2025).
 - [dParallel: Learnable Parallel Decoding for dLLMs](https://arxiv.org/abs/2509.26488) — Identifies the parallelism bottleneck as slow per-token certainty convergence and fixes it with certainty-forcing distillation, decoding 8+ tokens/step on GSM8K at preserved accuracy (2025).
 - [Self Speculative Decoding for Diffusion Large Language Models (SSD)](https://arxiv.org/abs/2510.04147) — Makes a dLLM its own drafter and verifier (self-drafting + hierarchical verification in one forward pass), up to 3.46x speedup while provably matching stepwise decoding output — no auxiliary draft model needed (2025).
+- [Set Block Decoding is a Language Model Inference Accelerator](https://arxiv.org/abs/2509.04185) — Meta FAIR; unifies next-token prediction with masked-token prediction for KV-cache-compatible parallel sampling, bridging AR serving and diffusion-style parallelism (2025).
+- [Elastic-Cache: Attention Is All You Need for KV Cache in Diffusion LLMs](https://arxiv.org/abs/2510.14973) — Training-free, depth-aware KV-cache refresh that handles attention drift for large speedups on diffusion LLMs (2025).
 
 ## 🖼️ Multimodal Diffusion LMs
 
@@ -97,13 +101,14 @@
 - [LLaDA-V: Large Language Diffusion Models with Visual Instruction Tuning](https://arxiv.org/abs/2505.16933) — A purely diffusion-based MLLM bolting a vision encoder + MLP connector onto LLaDA, competitive with LLaMA3-V and SOTA among diffusion MLLMs — evidence diffusion carries multimodal understanding, not just text (2025).
 - [Dimple: Discrete Diffusion Multimodal Large Language Model with Parallel Decoding](https://arxiv.org/abs/2505.16990) — Bills itself as the first discrete-diffusion MLLM; its real contribution is the Autoregressive-then-Diffusion training recipe that fixes the instability and length-bias of pure discrete diffusion (2025).
 - [MMaDA-Parallel: Multimodal Large Diffusion Language Models for Thinking-Aware Editing and Generation](https://arxiv.org/abs/2511.09611) — Shows sequential think-then-generate hurts via error propagation; its parallel diffusion lets text and image co-denoise bidirectionally, optimized by trajectory-level Parallel RL (2025).
-- [DiffusionVL: Translating Any Autoregressive Models into Diffusion Vision Language Models](https://arxiv.org/abs/2512.15713) — Instead of pretraining a weak diffusion base, converts strong AR VLMs into diffusion VLMs via efficient finetuning, hitting SOTA among diffusion VLMs with <5% of prior data (+34.4% MMMU-Pro) (2026).
+- [DiffusionVL: Translating Any Autoregressive Models into Diffusion Vision Language Models](https://arxiv.org/abs/2512.15713) — Instead of pretraining a weak diffusion base, converts strong AR VLMs into diffusion VLMs via efficient finetuning, hitting SOTA among diffusion VLMs with <5% of prior data (+34.4% MMMU-Pro) (2025).
 - [LaViDa-R1: Advancing Reasoning for Unified Multimodal Diffusion Language Models](https://arxiv.org/abs/2602.14147) — A unified multimodal reasoning dLLM combining SFT + multi-task RL with answer-forcing, tree search, and complementary likelihood estimation, spanning visual math, grounding, and image editing in one model (2026).
 
 ## 🧠 Reasoning & Code with Diffusion LMs
 
 - [d1: Scaling Reasoning in Diffusion Large Language Models via Reinforcement Learning](https://arxiv.org/abs/2504.12216) — The reference point for RL on dLLMs: introduces diffu-GRPO, the first policy-gradient RL adapted to masked dLLMs (plus masked SFT), consistently lifting LLaDA-8B on GSM8K/MATH and logic tasks (2025).
 - [DiffuCoder: Understanding and Improving Masked Diffusion Models for Code Generation](https://arxiv.org/abs/2506.20639) — Apple's 7B code dLLM (130B tokens); its coupled-GRPO builds complementary mask noise for +4.4% EvalPlus and argues code's non-sequential refinement suits diffusion — the go-to reference for dLLM code behavior (2025).
+- [TraceRL / TraDo: Trajectory-Aware RL for Diffusion LLMs](https://arxiv.org/abs/2509.06949) — Trajectory-aware RL yielding TraDo-4B/8B and TraDo-8B-Thinking, the first long-CoT diffusion LM; arguably the most important RL-for-dLLM result after d1 (2025).
 
 ## 📏 Benchmarks & Evaluation
 
@@ -127,6 +132,7 @@
 - [dllm-reasoning/d1](https://github.com/dllm-reasoning/d1) — Official d1: masked SFT + diffu-GRPO (policy gradient adapted to masked diffusion) for reasoning — the go-to RL recipe for dLLMs (2025).
 - [apple/ml-diffucoder](https://github.com/apple/ml-diffucoder) — Apple's DiffuCoder: a 7B masked-diffusion code model (Base/Instruct/cpGRPO on HF) introducing coupled-GRPO post-training and an "autoregressiveness score" (2025).
 - [NVlabs/Fast-dLLM](https://github.com/NVlabs/Fast-dLLM) — NVIDIA's acceleration suite for diffusion LLMs/VLMs: v1 is training-free (KV cache + parallel decoding), v2 adds block-diffusion fine-tuning; large practical speedups (2025–2026).
+- [ZHZisZZ/dllm](https://github.com/ZHZisZZ/dllm) — A unified training / inference / evaluation toolkit reproducing LLaDA/Dream plus diffu-GRPO; the closest thing to a standard dLLM harness for practitioners (2026).
 
 ## 📚 Related Awesome Lists
 
