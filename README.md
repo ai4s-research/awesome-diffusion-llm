@@ -5,9 +5,9 @@
   <p>
     <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
-    <a href="https://github.com/ai4s-research/awesome-diffusion-llm/stargazers"><img src="https://img.shields.io/github/stars/ai-boost/awesome-diffusion-llm?style=social" alt="GitHub Stars"></a>
-    <a href="https://github.com/ai4s-research/awesome-diffusion-llm/network/members"><img src="https://img.shields.io/github/forks/ai-boost/awesome-diffusion-llm?style=social" alt="GitHub Forks"></a>
-    <a href="https://github.com/ai4s-research/awesome-diffusion-llm/commits/main"><img src="https://img.shields.io/github/last-commit/ai-boost/awesome-diffusion-llm" alt="Last Commit"></a>
+    <a href="https://github.com/ai4s-research/awesome-diffusion-llm/stargazers"><img src="https://img.shields.io/github/stars/ai4s-research/awesome-diffusion-llm?style=social" alt="GitHub Stars"></a>
+    <a href="https://github.com/ai4s-research/awesome-diffusion-llm/network/members"><img src="https://img.shields.io/github/forks/ai4s-research/awesome-diffusion-llm?style=social" alt="GitHub Forks"></a>
+    <a href="https://github.com/ai4s-research/awesome-diffusion-llm/commits/main"><img src="https://img.shields.io/github/last-commit/ai4s-research/awesome-diffusion-llm" alt="Last Commit"></a>
   </p>
 </div>
 
