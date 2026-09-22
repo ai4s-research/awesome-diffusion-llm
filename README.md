@@ -95,6 +95,8 @@
 
 ## 🖼️ Multimodal Diffusion LMs
 
+- [Dynin-Omni: Omnimodal Unified Large Diffusion Language Model](https://arxiv.org/abs/2604.00007) — A masked-diffusion omnimodal foundation model for text, image, speech, and video understanding in one shared discrete-token architecture; code, model, and demo are open (2026).
+
 - [Dual Diffusion for Unified Image Generation and Understanding (D-DiT)](https://arxiv.org/abs/2501.00289) — A fully end-to-end dual-branch diffusion transformer doing both text-to-image and image-to-text without any autoregressive text decoder, which most prior unified diffusion models still relied on (2025).
 - [MMaDA: Multimodal Large Diffusion Language Models](https://arxiv.org/abs/2505.15809) — The standout unified model: one modality-agnostic diffusion architecture covering text reasoning, image understanding, and text-to-image generation, plus mixed-CoT tuning and a unified RL algorithm (UniGRPO) (2025).
 - [LaViDa: A Large Diffusion Language Model for Multimodal Understanding](https://arxiv.org/abs/2505.16839) — Diffusion VLM exploiting parallel decoding for speed and bidirectional context for controllable text-infilling; introduces complementary masking and prefix KV-cache (NeurIPS 2025 Spotlight, 2025).
