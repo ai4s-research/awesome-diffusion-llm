@@ -103,6 +103,7 @@
 - [MMaDA-Parallel: Multimodal Large Diffusion Language Models for Thinking-Aware Editing and Generation](https://arxiv.org/abs/2511.09611) — Shows sequential think-then-generate hurts via error propagation; its parallel diffusion lets text and image co-denoise bidirectionally, optimized by trajectory-level Parallel RL (2025).
 - [DiffusionVL: Translating Any Autoregressive Models into Diffusion Vision Language Models](https://arxiv.org/abs/2512.15713) — Instead of pretraining a weak diffusion base, converts strong AR VLMs into diffusion VLMs via efficient finetuning, hitting SOTA among diffusion VLMs with <5% of prior data (+34.4% MMMU-Pro) (2025).
 - [LaViDa-R1: Advancing Reasoning for Unified Multimodal Diffusion Language Models](https://arxiv.org/abs/2602.14147) — A unified multimodal reasoning dLLM combining SFT + multi-task RL with answer-forcing, tree search, and complementary likelihood estimation, spanning visual math, grounding, and image editing in one model (2026).
+- [Omni-Diffusion: Unified Multimodal Understanding and Generation with Masked Discrete Diffusion](https://arxiv.org/abs/2603.06577) — The first any-to-any multimodal model built entirely on masked discrete diffusion: text, image, and speech are all tokenized discretely and modeled jointly by one dLLM (via MAGVITv2 + GLM-4-Voice tokenizers), so understanding and generation across modalities share a single bidirectional denoiser — open code + weights, ICML 2026 (2026).
 
 ## 🧠 Reasoning & Code with Diffusion LMs
 
