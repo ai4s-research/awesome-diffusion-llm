@@ -67,6 +67,7 @@
 - [DiffusionGemma](https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/) — Google's first open-weight text-diffusion model (26B MoE, ~3.8B active, Apache-2.0, ~1,100 tok/s on H100); the first frontier-lab open dLLM and the headline H1-2026 release ([weights](https://huggingface.co/google/diffusiongemma-26B-A4B-it)) (2026).
 - [RND1: Radical Numerics Diffusion](https://github.com/RadicalNumerics/RND1) — A 30B sparse-MoE (3B active) dLLM converted from Qwen3-30B-A3B via AR-to-diffusion; billed as the largest open diffusion LM at release (2025).
 - [Improved Large Language Diffusion Models (iLLaDA)](https://arxiv.org/abs/2606.25331) — ML-GSAI's direct successor to LLaDA: an 8B masked-diffusion LLM trained from scratch (12T pretrain + 25B-token SFT tokens) that keeps the masked-diffusion objective throughout, lifting LLaDA by +14.5 MATH / +16.5 HumanEval (instruct) and staying competitive with Qwen2.5-7B — base + instruct weights open under Apache-2.0 ([code](https://github.com/ML-GSAI/LLaDA)) (2026).
+- [Sumi: Open Uniform Diffusion Language Model from Scratch](https://arxiv.org/abs/2606.19005) — The first large-scale uniform-state (non-masked) diffusion LLM pretrained from scratch: 7B on 1.5T tokens with a fully specified public data mixture, competitive with AR on knowledge/reasoning/code — the clean open reference point for scaling uniform diffusion beyond masked ([weights](https://huggingface.co/tohoku-nlp/sumi-7b)) (Tohoku NLP, 2026).
 
 ## 🏋️ Training & Scaling Methods
 
