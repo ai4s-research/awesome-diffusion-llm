@@ -119,6 +119,7 @@
 - [Theoretical Benefit and Limitation of Diffusion Language Model](https://arxiv.org/abs/2502.09622) — Formally analyzes when masked diffusion's parallel decoding actually helps versus hurts, separating efficiency gains from accuracy trade-offs — a grounding theoretical reference for evaluation claims (2025).
 - [Generative Frontiers: Why Evaluation Matters for Diffusion Language Models](https://arxiv.org/abs/2604.02718) — Argues likelihood/perplexity alone misleads for DLMs, showing generative perplexity and entropy are two components of a KL divergence and proposing "generative frontiers" as a principled metric; essential reading on evaluation pitfalls (2026).
 - [Diffusion Language Models: An Experimental Analysis](https://arxiv.org/abs/2606.19475) — Systematic head-to-head of eight SOTA dLLMs across eight benchmarks (reasoning, coding, translation, knowledge), dissecting how denoising steps, block size, and unmasking ratios trade quality against efficiency — the most current empirical study (2026).
+- [Where Quality Breaks in Compressed Short-Text Generation: Staged Bottleneck Localization](https://arxiv.org/abs/2607.24176) — Introduces a staged evaluation protocol that measures codec reconstruction before latent generation, helping distinguish codec loss from code-space MDLM failure in one controlled compressed-text pipeline; includes a detailed [project page](https://aogavrilov.com/publications/where-quality-breaks/) (2026).
 
 ## 💻 Code & Implementations
 
