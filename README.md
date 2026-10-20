@@ -97,6 +97,7 @@
 - [Set Block Decoding is a Language Model Inference Accelerator](https://arxiv.org/abs/2509.04185) — Meta FAIR; unifies next-token prediction with masked-token prediction for KV-cache-compatible parallel sampling, bridging AR serving and diffusion-style parallelism (2025).
 - [Elastic-Cache: Attention Is All You Need for KV Cache in Diffusion LLMs](https://arxiv.org/abs/2510.14973) — Training-free, depth-aware KV-cache refresh that handles attention drift for large speedups on diffusion LLMs (2025).
 - [d3LLM: Ultra-Fast Diffusion LLM using Pseudo-Trajectory Distillation](https://arxiv.org/abs/2601.07568) — ICML 2026; a trained (not training-free) answer to the accuracy-parallelism trade-off: pseudo-trajectory distillation teaches the student which tokens to decode early, paired with entropy-based multi-block decoding and KV-cache refresh — distilled d3LLM-LLaDA/Dream/Dream-Coder checkpoints hit ~5x AR speed on H100, with an AUP (Accuracy Under Parallelism) metric and SGLang support ([code](https://github.com/hao-ai-lab/d3LLM)) (2026).
+- [Consistency Diffusion Language Models for Faster Sampling (CDLM)](https://arxiv.org/abs/2511.19269) — MLSys 2026; a trained accelerator that pairs consistency modeling (multi-token finalization per step) with block-wise causal attention fine-tuning so sampling needs far fewer steps *and* becomes KV-cache compatible — 3.6–14.5x lower latency at competitive accuracy on math and coding ([code](https://github.com/SqueezeAILab/CDLM)) (2025–2026).
 
 ## 🖼️ Multimodal Diffusion LMs
 
