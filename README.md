@@ -83,6 +83,7 @@
 - [Esoteric Language Models: A Family of Any-Order Diffusion LLMs (Eso-LMs)](https://arxiv.org/abs/2506.01928) — Interpolates between AR and masked diffusion and, by exploiting the any-order-AR connection with causal attention, becomes the first MDM to support true KV caching while keeping parallel generation — up to 65x faster than standard MDMs (2025).
 - [Training Optimal Large Diffusion Language Models (Quokka)](https://arxiv.org/abs/2510.03280) — The "Chinchilla for dLLMs": first large-scale scaling law covering both compute- and data-constrained regimes, with the notable finding that dLLMs are ~2–5x more data-hungry than AR at equal FLOPs (2025).
 - [Scaling Beyond Masked Diffusion Language Models](https://arxiv.org/abs/2602.15014) — First scaling-law study of uniform-state and interpolating discrete diffusion (beyond masked), showing masked diffusion can be made ~12% more FLOPs-efficient with a simple cross-entropy objective (ICML 2026).
+- [Beyond Hard Masks: Progressive Token Evolution for Diffusion Language Models (EvoToken-DLM)](https://arxiv.org/abs/2601.07351) — Replaces hard binary masks with evolving soft token distributions and introduces continuous trajectory supervision, enabling revisable iterative decoding; [code](https://github.com/aim-uofa/EvoTokenDLM) is publicly available (ACL 2026).
 
 ## ⚡ Inference, Decoding & Acceleration
 
