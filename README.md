@@ -142,6 +142,7 @@
 - [apple/ml-diffucoder](https://github.com/apple/ml-diffucoder) — Apple's DiffuCoder: a 7B masked-diffusion code model (Base/Instruct/cpGRPO on HF) introducing coupled-GRPO post-training and an "autoregressiveness score" (2025).
 - [NVlabs/Fast-dLLM](https://github.com/NVlabs/Fast-dLLM) — NVIDIA's acceleration suite for diffusion LLMs/VLMs: v1 is training-free (KV cache + parallel decoding), v2 adds block-diffusion fine-tuning; large practical speedups (2025–2026).
 - [ZHZisZZ/dllm](https://github.com/ZHZisZZ/dllm) — A unified training / inference / evaluation toolkit reproducing LLaDA/Dream plus diffu-GRPO; the closest thing to a standard dLLM harness for practitioners (2026).
+- [Open-dLLM / Open-dCoder](https://github.com/pengzhangzhi/Open-dLLM) — The most open dLLM release to date: the full pipeline from raw data (FineCode) through masked-diffusion pretraining (Qwen2.5-Coder-initialized, MDM objective) to checkpoints, eval, and inference — where LLaDA/Dream release only weights; Apache-2.0, and the 0.5B Open-dCoder is competitive with much larger dLLMs on code completion ([weights](https://huggingface.co/fredzzp/open-dcoder-0.5B)) (2026).
 
 ## 📚 Related Awesome Lists
 
