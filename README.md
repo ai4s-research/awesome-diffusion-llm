@@ -36,6 +36,7 @@
 
 - [Discrete Diffusion in Large Language and Multimodal Models: A Survey](https://arxiv.org/abs/2506.13759) — The first survey dedicated to discrete diffusion spanning both LLMs and multimodal models; the canonical taxonomy reference with a maintained companion repo (2025).
 - [A Survey on Diffusion Language Models](https://arxiv.org/abs/2508.10875) — Broad "start here" overview organizing the field into continuous, discrete, and multimodal DLMs, with a high-traffic companion list and updates running into 2026 (2025).
+- [How To Build A Modern Diffusion Language Model](https://arxiv.org/abs/2610.33391) — From the MDLM team (Kuleshov group): a practitioner-oriented tour of how modern dLLMs are actually built, from foundations and core algorithmic/architectural building blocks to applications in biology and language and what diffusion means for future scaling laws — the natural survey companion to the MDLM codebase (2026).
 
 ## 🏛️ Foundations
 
