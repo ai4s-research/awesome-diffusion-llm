@@ -29,6 +29,7 @@
 - [🖼️ Multimodal Diffusion LMs](#️-multimodal-diffusion-lms)
 - [🧠 Reasoning & Code with Diffusion LMs](#-reasoning--code-with-diffusion-lms)
 - [📏 Benchmarks & Evaluation](#-benchmarks--evaluation)
+- [🛡️ Safety & Security](#️-safety--security)
 - [💻 Code & Implementations](#-code--implementations)
 - [📚 Related Awesome Lists](#-related-awesome-lists)
 
@@ -160,6 +161,10 @@
 - [Efficient Self-Evaluation for Diffusion Language Models via Sequence Regeneration (DiSE)](https://arxiv.org/abs/2603.02760) — Introduces regeneration probability as an efficient self-evaluation signal for diffusion LLMs, supporting likelihood estimation, uncertainty quantification, and confidence-guided flexible-length generation (ACL 2026).
 - [Generative Frontiers: Why Evaluation Matters for Diffusion Language Models](https://arxiv.org/abs/2604.02718) — Argues likelihood/perplexity alone misleads for DLMs, showing generative perplexity and entropy are two components of a KL divergence and proposing "generative frontiers" as a principled metric; essential reading on evaluation pitfalls (2026).
 - [Diffusion Language Models: An Experimental Analysis](https://arxiv.org/abs/2606.19475) — Systematic head-to-head of eight SOTA dLLMs across eight benchmarks (reasoning, coding, translation, knowledge), dissecting how denoising steps, block size, and unmasking ratios trade quality against efficiency — the most current empirical study (2026).
+
+## 🛡️ Safety & Security
+
+- [Mitigating Backdoors in Masked Diffusion Language Models (UNMASK)](https://arxiv.org/abs/2611.28640) — The first backdoor *defense* for MDLMs, opening a security front the list previously lacked: UNMASK scores every input token for trigger suspiciousness by exploiting two properties of backdoor triggers (specificity, dominance) through two dLLM-native capabilities AR defenses can't use — parallel token prediction and reconstruction at arbitrary positions — then detects, localizes, and removes the backdoor, with theoretical backing; across 40 settings spanning two attacks and four models it detects 99.3% of trigger-containing inputs at 5% FPR (vs 54.8% for the best adapted baseline), localizes triggers at >99% accuracy, and cuts attack success from 95% to 1% with clean-input utility largely intact (2026).
 
 ## 💻 Code & Implementations
 
